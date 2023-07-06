@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<div class="flex parent">
+  <div id="atul">
+    <div>
+      <div>
+        <p>Test para</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+         let innerElement = document.querySelector('p')
+         let currentElement = innerElement
+let parent = document.querySelector('.parent')
+
+         console.log(currentElement.parentNode)
+
+        while (currentElement.parentNode !== parent) {
+                 currentElement = currentElement.parentNode
+        }
+
+            console.log(currentElement)
+            console.log(currentElement.id)
+</script>
+
+
+  </body>
+</html>
